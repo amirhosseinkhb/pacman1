@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" styleClass="start" stylesheets="@menu.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.viewController">
+
+    <top>
+        <HBox alignment="CENTER">
+            <Label text="pacman" textFill="#e5f01a" />
+        </HBox>
+    </top>
+
+    <bottom>
+        <Button onMouseClicked="#exitClicked" text="Exit" />
+    </bottom>
+    <left>
+        <AnchorPane prefHeight="357.0" prefWidth="232.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="363.0" fitWidth="237.0" layoutX="-11.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../pics/Pac_Man_TF_PVC_Sneak_Peek_3840x3840px.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="122.0" prefWidth="124.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="14.0" layoutY="74.0" prefHeight="18.0" prefWidth="66.0" text="Username" />
+                <TextField fx:id="usernameE" layoutX="80.0" layoutY="70.0" promptText="Username" />
+                <Label layoutX="14.0" layoutY="114.0" prefHeight="18.0" prefWidth="66.0" text="Password" />
+                <PasswordField fx:id="passwordE" layoutX="81.0" layoutY="111.0" promptText="Password" />
+                <Button layoutX="32.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#loginClicked" prefHeight="26.0" prefWidth="245.0" style="-fx-background-color: yellow;" text="Login" />
+                <Button layoutX="32.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#RegisterClicked" prefHeight="26.0" prefWidth="245.0" style="-fx-background-color: yellow;" text="Register" />
+                <Text fx:id="error" fill="#ea0606" layoutX="34.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="92.5367431640625" />
+
+            </children>
+        </AnchorPane>
+    </center>
+
+</BorderPane>

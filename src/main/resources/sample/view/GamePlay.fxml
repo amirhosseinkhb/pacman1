@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" styleClass="pacman" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.Game">
+    <children>
+        <Rectangle fx:id="pacman" arcHeight="5.0" arcWidth="5.0" focusTraversable="true" height="20.0" stroke="#24d911" strokeType="INSIDE" width="20.0" />
+        <Text fx:id="score" fill="#fcf9f8" layoutX="44.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="114.13665771484375" />
+        <ImageView fx:id="jon3" fitHeight="30.0" fitWidth="26.0" layoutX="203.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/jonRemain.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="jon2" fitHeight="33.0" fitWidth="26.0" layoutX="236.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/jonRemain.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="jon1" fitHeight="30.0" fitWidth="36.0" layoutX="269.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/jonRemain.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="score1" fill="#fcf9f8" layoutX="2.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="score :" wrappingWidth="35.73663330078125" />
+    </children>
+
+</AnchorPane>
